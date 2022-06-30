@@ -127,9 +127,12 @@ class BleService {
         completer.complete(bluetoothState);
       }
     });
-    return completer.future.timeout(Duration(seconds: 5),
-        onTimeout: () {}) as BluetoothState;
-        // => throw Exception('Wait for Bluetooth PowerOn timeout'));
+
+    return completer.future.timeout(const Duration(seconds: 5),
+        onTimeout: () => throw Exception('Wait for Bluetooth PowerOn timeout')) as Future<BluetoothState>;
+    // return completer.future.timeout(Duration(seconds: 5),
+    //     onTimeout: () {}) as BluetoothState;
+    //     // => throw Exception('Wait for Bluetooth PowerOn timeout'));
   }
 
   Future<bool> requestBlePermissions() async {
