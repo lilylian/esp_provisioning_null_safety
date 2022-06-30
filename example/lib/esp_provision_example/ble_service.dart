@@ -12,6 +12,7 @@ class BleService {
   // static BleManager _bleManager;
   static Logger log = Logger(printer: PrettyPrinter());
   bool _isPowerOn = false;
+  StreamSubscription<BluetoothState>? _stateSubscription;
   BluetoothDevice? selectedBluetoothDevice;
 
   static BleService getInstance() {
@@ -60,6 +61,7 @@ class BleService {
     _isPowerOn = false;
     stopScanBle();
     
+    await _stateSubscription?.cancel();
     BluetoothDeviceState? deviceState = (await selectedBluetoothDevice?.state.first);
     bool _check = deviceState == BluetoothDeviceState.connected || deviceState == BluetoothDeviceState.connecting;
     if(_check) {
@@ -109,7 +111,8 @@ class BleService {
   Future<BluetoothState> _waitForBluetoothPoweredOn() async {
     Completer completer = Completer<BluetoothState>();
     
-    _ble.state.listen((BluetoothState bluetoothState) { 
+    _stateSubscription?.cancel();
+    _stateSubscription = _ble.state.listen((BluetoothState bluetoothState) { 
       if ((bluetoothState == BluetoothState.on ||
               bluetoothState == BluetoothState.unauthorized) &&
           !completer.isCompleted) {
