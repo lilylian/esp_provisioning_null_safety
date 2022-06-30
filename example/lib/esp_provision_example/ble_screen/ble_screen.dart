@@ -1,3 +1,4 @@
+// esp_provisioning_blue_null_safety_example
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -66,7 +67,7 @@ class _BleScreenState extends State<BleScreen> {
             }
 
             return Center(
-              child: SpinKitRipple(color: const TextSelectionThemeData().selectionColor),
+              child: SpinKitRipple(color: Theme.of(context).textSelectionColor),
             );
           },
         ),
