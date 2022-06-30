@@ -31,10 +31,8 @@ dependencies:
     sdk: flutter
 
   
-  # esp_provisioning: 
-  #   path: ../../../gitLab/esp_provisioning
   esp_provisioning: 
-    path: ../../esp_provisioning_null_safety
+    path: ../
   flutter_bloc: ^8.0.1
   flutter_spinkit: ^5.1.0
   logger: ^1.1.0
