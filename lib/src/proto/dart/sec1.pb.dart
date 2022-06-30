@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: sec1.proto
 //
-// @dart = 2.3
+// @ dart = 2.3
 // ignore_for_file: camel_case_types,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type
 
 import 'dart:core' as $core;
@@ -25,7 +25,7 @@ class SessionCmd1 extends $pb.GeneratedMessage {
   factory SessionCmd1.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SessionCmd1.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   SessionCmd1 clone() => SessionCmd1()..mergeFromMessage(this);
-  SessionCmd1 copyWith(void Function(SessionCmd1) updates) => super.copyWith((message) => updates(message as SessionCmd1));
+  SessionCmd1 copyWith(void Function(SessionCmd1) updates) => super.copyWith((message) => updates(message as SessionCmd1)) as SessionCmd1;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static SessionCmd1 create() => SessionCmd1._();
@@ -33,7 +33,7 @@ class SessionCmd1 extends $pb.GeneratedMessage {
   static $pb.PbList<SessionCmd1> createRepeated() => $pb.PbList<SessionCmd1>();
   @$core.pragma('dart2js:noInline')
   static SessionCmd1 getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SessionCmd1>(create);
-  static SessionCmd1 _defaultInstance;
+  static SessionCmd1? _defaultInstance;
 
   @$pb.TagNumber(2)
   $core.List<$core.int> get clientVerifyData => $_getN(0);
@@ -57,7 +57,7 @@ class SessionResp1 extends $pb.GeneratedMessage {
   factory SessionResp1.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SessionResp1.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   SessionResp1 clone() => SessionResp1()..mergeFromMessage(this);
-  SessionResp1 copyWith(void Function(SessionResp1) updates) => super.copyWith((message) => updates(message as SessionResp1));
+  SessionResp1 copyWith(void Function(SessionResp1) updates) => super.copyWith((message) => updates(message as SessionResp1)) as SessionResp1;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static SessionResp1 create() => SessionResp1._();
@@ -65,7 +65,7 @@ class SessionResp1 extends $pb.GeneratedMessage {
   static $pb.PbList<SessionResp1> createRepeated() => $pb.PbList<SessionResp1>();
   @$core.pragma('dart2js:noInline')
   static SessionResp1 getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SessionResp1>(create);
-  static SessionResp1 _defaultInstance;
+  static SessionResp1? _defaultInstance;
 
   @$pb.TagNumber(1)
   $0.Status get status => $_getN(0);
@@ -97,7 +97,7 @@ class SessionCmd0 extends $pb.GeneratedMessage {
   factory SessionCmd0.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SessionCmd0.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   SessionCmd0 clone() => SessionCmd0()..mergeFromMessage(this);
-  SessionCmd0 copyWith(void Function(SessionCmd0) updates) => super.copyWith((message) => updates(message as SessionCmd0));
+  SessionCmd0 copyWith(void Function(SessionCmd0) updates) => super.copyWith((message) => updates(message as SessionCmd0)) as SessionCmd0;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static SessionCmd0 create() => SessionCmd0._();
@@ -105,7 +105,7 @@ class SessionCmd0 extends $pb.GeneratedMessage {
   static $pb.PbList<SessionCmd0> createRepeated() => $pb.PbList<SessionCmd0>();
   @$core.pragma('dart2js:noInline')
   static SessionCmd0 getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SessionCmd0>(create);
-  static SessionCmd0 _defaultInstance;
+  static SessionCmd0? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.List<$core.int> get clientPubkey => $_getN(0);
@@ -130,7 +130,7 @@ class SessionResp0 extends $pb.GeneratedMessage {
   factory SessionResp0.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SessionResp0.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   SessionResp0 clone() => SessionResp0()..mergeFromMessage(this);
-  SessionResp0 copyWith(void Function(SessionResp0) updates) => super.copyWith((message) => updates(message as SessionResp0));
+  SessionResp0 copyWith(void Function(SessionResp0) updates) => super.copyWith((message) => updates(message as SessionResp0)) as SessionResp0;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static SessionResp0 create() => SessionResp0._();
@@ -138,7 +138,7 @@ class SessionResp0 extends $pb.GeneratedMessage {
   static $pb.PbList<SessionResp0> createRepeated() => $pb.PbList<SessionResp0>();
   @$core.pragma('dart2js:noInline')
   static SessionResp0 getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SessionResp0>(create);
-  static SessionResp0 _defaultInstance;
+  static SessionResp0? _defaultInstance;
 
   @$pb.TagNumber(1)
   $0.Status get status => $_getN(0);
@@ -199,7 +199,7 @@ class Sec1Payload extends $pb.GeneratedMessage {
   factory Sec1Payload.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Sec1Payload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   Sec1Payload clone() => Sec1Payload()..mergeFromMessage(this);
-  Sec1Payload copyWith(void Function(Sec1Payload) updates) => super.copyWith((message) => updates(message as Sec1Payload));
+  Sec1Payload copyWith(void Function(Sec1Payload) updates) => super.copyWith((message) => updates(message as Sec1Payload)) as Sec1Payload;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static Sec1Payload create() => Sec1Payload._();
@@ -207,9 +207,9 @@ class Sec1Payload extends $pb.GeneratedMessage {
   static $pb.PbList<Sec1Payload> createRepeated() => $pb.PbList<Sec1Payload>();
   @$core.pragma('dart2js:noInline')
   static Sec1Payload getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Sec1Payload>(create);
-  static Sec1Payload _defaultInstance;
+  static Sec1Payload? _defaultInstance;
 
-  Sec1Payload_Payload whichPayload() => _Sec1Payload_PayloadByTag[$_whichOneof(0)];
+  Sec1Payload_Payload? whichPayload() => _Sec1Payload_PayloadByTag[$_whichOneof(0)];
   void clearPayload() => clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)

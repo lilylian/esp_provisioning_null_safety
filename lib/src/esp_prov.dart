@@ -14,10 +14,10 @@ class EspProv {
   ProvTransport transport;
   ProvSecurity security;
 
-  EspProv({this.transport, this.security});
+  EspProv({required this.transport, required this.security});
 
   Future<void> establishSession() async {
-    SessionData responseData;
+    SessionData? responseData;
 
     await transport.disconnect();
 
@@ -146,7 +146,7 @@ class EspProv {
     return ret;
   }
 
-  Future<bool> sendWifiConfig({String ssid, String password}) async {
+  Future<bool> sendWifiConfig({String? ssid, String? password}) async {
     var payload = WiFiConfigPayload();
     payload.msg = WiFiConfigMsgType.TypeCmdSetConfig;
 
@@ -171,7 +171,7 @@ class EspProv {
     return (respPayload.respApplyConfig.status == Status.Success);
   }
 
-  Future<ConnectionStatus> getStatus() async {
+  Future<ConnectionStatus?> getStatus() async {
     var payload = WiFiConfigPayload();
     payload.msg = WiFiConfigMsgType.TypeCmdGetStatus;
 
@@ -213,7 +213,7 @@ class EspProv {
       {int packageSize = 256}) async {
     var i = data.length;
     var offset = 0;
-    List<int> ret = new List<int>(0);
+    List<int> ret = [];
     while (i > 0) {
       var needToSend = data.sublist(offset, i < packageSize ? i : packageSize);
       var encrypted = await security.encrypt(needToSend);

@@ -8,9 +8,12 @@ import 'transport.dart';
 class TransportBLE implements ProvTransport {
   final BluetoothDevice bluetoothDevice;
   final String serviceUUID;
-  Map<String, String> nuLookup;
+  late Map<String, String> nuLookup;
   final Map<String, String> lockupTable;
-  List<BluetoothService> services;
+  late List<BluetoothService> services;
+  
+  static const int CONNECTION_TIMEOUT = 6000;
+  static const int DISCOVERY_TIMEOUT = 6000;
 
   static const PROV_BLE_SERVICE = '021a9004-0382-4aea-bff4-6b3f1c5adfb4';
   static const PROV_BLE_EP = {
@@ -26,15 +29,12 @@ class TransportBLE implements ProvTransport {
     nuLookup = new Map<String, String>();
 
     for (var name in lockupTable.keys) {
-      var charsInt = int.parse(lockupTable[name], radix: 16);
+      var charsInt = int.parse(lockupTable[name]!, radix: 16);
       var serviceHex = charsInt.toRadixString(16).padLeft(4, '0');
       nuLookup[name] =
           serviceUUID.substring(0, 4) + serviceHex + serviceUUID.substring(8);
     }
   }
-  
-  static const int CONNECTION_TIMEOUT = 6000;
-  static const int DISCOVERY_TIMEOUT = 6000;
 
   Future<bool> connect() async {
     var isConnected = (await bluetoothDevice.state.first) == BluetoothDeviceState.connected;
@@ -55,8 +55,8 @@ class TransportBLE implements ProvTransport {
     return service.characteristics.firstWhere((characteristic) => characteristic.uuid == Guid(charUuid));
   }
 
-  Future<Uint8List> sendReceive(String epName, Uint8List data) async {
-    BluetoothCharacteristic characteristic = findService(serviceUUID, nuLookup[epName]);
+  Future<Uint8List> sendReceive(String epName, Uint8List? data) async {
+    BluetoothCharacteristic characteristic = findService(serviceUUID, nuLookup[epName]!);
 
     if (data != null && data.length > 0) {
       await characteristic.write(data.toList(), withoutResponse: false);

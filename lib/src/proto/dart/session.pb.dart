@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: session.proto
 //
-// @dart = 2.3
+// @ dart = 2.3
 // ignore_for_file: camel_case_types,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type
 
 import 'dart:core' as $core;
@@ -41,7 +41,7 @@ class SessionData extends $pb.GeneratedMessage {
   factory SessionData.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory SessionData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   SessionData clone() => SessionData()..mergeFromMessage(this);
-  SessionData copyWith(void Function(SessionData) updates) => super.copyWith((message) => updates(message as SessionData));
+  SessionData copyWith(void Function(SessionData) updates) => super.copyWith((message) => updates(message as SessionData)) as SessionData;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static SessionData create() => SessionData._();
@@ -49,9 +49,9 @@ class SessionData extends $pb.GeneratedMessage {
   static $pb.PbList<SessionData> createRepeated() => $pb.PbList<SessionData>();
   @$core.pragma('dart2js:noInline')
   static SessionData getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SessionData>(create);
-  static SessionData _defaultInstance;
+  static SessionData? _defaultInstance;
 
-  SessionData_Proto whichProto() => _SessionData_ProtoByTag[$_whichOneof(0)];
+  SessionData_Proto? whichProto() => _SessionData_ProtoByTag[$_whichOneof(0)];
   void clearProto() => clearField($_whichOneof(0));
 
   @$pb.TagNumber(2)

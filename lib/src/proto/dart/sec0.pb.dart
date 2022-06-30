@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: sec0.proto
 //
-// @dart = 2.3
+// @ dart = 2.3
 // ignore_for_file: camel_case_types,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type
 
 import 'dart:core' as $core;
@@ -24,7 +24,7 @@ class S0SessionCmd extends $pb.GeneratedMessage {
   factory S0SessionCmd.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory S0SessionCmd.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   S0SessionCmd clone() => S0SessionCmd()..mergeFromMessage(this);
-  S0SessionCmd copyWith(void Function(S0SessionCmd) updates) => super.copyWith((message) => updates(message as S0SessionCmd));
+  S0SessionCmd copyWith(void Function(S0SessionCmd) updates) => super.copyWith((message) => updates(message as S0SessionCmd)) as S0SessionCmd;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static S0SessionCmd create() => S0SessionCmd._();
@@ -32,7 +32,7 @@ class S0SessionCmd extends $pb.GeneratedMessage {
   static $pb.PbList<S0SessionCmd> createRepeated() => $pb.PbList<S0SessionCmd>();
   @$core.pragma('dart2js:noInline')
   static S0SessionCmd getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<S0SessionCmd>(create);
-  static S0SessionCmd _defaultInstance;
+  static S0SessionCmd? _defaultInstance;
 }
 
 class S0SessionResp extends $pb.GeneratedMessage {
@@ -46,7 +46,7 @@ class S0SessionResp extends $pb.GeneratedMessage {
   factory S0SessionResp.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory S0SessionResp.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   S0SessionResp clone() => S0SessionResp()..mergeFromMessage(this);
-  S0SessionResp copyWith(void Function(S0SessionResp) updates) => super.copyWith((message) => updates(message as S0SessionResp));
+  S0SessionResp copyWith(void Function(S0SessionResp) updates) => super.copyWith((message) => updates(message as S0SessionResp)) as S0SessionResp;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static S0SessionResp create() => S0SessionResp._();
@@ -54,7 +54,7 @@ class S0SessionResp extends $pb.GeneratedMessage {
   static $pb.PbList<S0SessionResp> createRepeated() => $pb.PbList<S0SessionResp>();
   @$core.pragma('dart2js:noInline')
   static S0SessionResp getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<S0SessionResp>(create);
-  static S0SessionResp _defaultInstance;
+  static S0SessionResp? _defaultInstance;
 
   @$pb.TagNumber(1)
   $0.Status get status => $_getN(0);
@@ -91,7 +91,7 @@ class Sec0Payload extends $pb.GeneratedMessage {
   factory Sec0Payload.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Sec0Payload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   Sec0Payload clone() => Sec0Payload()..mergeFromMessage(this);
-  Sec0Payload copyWith(void Function(Sec0Payload) updates) => super.copyWith((message) => updates(message as Sec0Payload));
+  Sec0Payload copyWith(void Function(Sec0Payload) updates) => super.copyWith((message) => updates(message as Sec0Payload)) as Sec0Payload;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static Sec0Payload create() => Sec0Payload._();
@@ -99,9 +99,9 @@ class Sec0Payload extends $pb.GeneratedMessage {
   static $pb.PbList<Sec0Payload> createRepeated() => $pb.PbList<Sec0Payload>();
   @$core.pragma('dart2js:noInline')
   static Sec0Payload getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Sec0Payload>(create);
-  static Sec0Payload _defaultInstance;
+  static Sec0Payload? _defaultInstance;
 
-  Sec0Payload_Payload whichPayload() => _Sec0Payload_PayloadByTag[$_whichOneof(0)];
+  Sec0Payload_Payload? whichPayload() => _Sec0Payload_PayloadByTag[$_whichOneof(0)];
   void clearPayload() => clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)

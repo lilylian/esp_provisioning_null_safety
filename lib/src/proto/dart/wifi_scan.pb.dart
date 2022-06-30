@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: wifi_scan.proto
 //
-// @dart = 2.3
+// @ dart = 2.3
 // ignore_for_file: camel_case_types,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type
 
 import 'dart:core' as $core;
@@ -29,7 +29,7 @@ class CmdScanStart extends $pb.GeneratedMessage {
   factory CmdScanStart.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory CmdScanStart.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   CmdScanStart clone() => CmdScanStart()..mergeFromMessage(this);
-  CmdScanStart copyWith(void Function(CmdScanStart) updates) => super.copyWith((message) => updates(message as CmdScanStart));
+  CmdScanStart copyWith(void Function(CmdScanStart) updates) => super.copyWith((message) => updates(message as CmdScanStart)) as CmdScanStart;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static CmdScanStart create() => CmdScanStart._();
@@ -37,7 +37,7 @@ class CmdScanStart extends $pb.GeneratedMessage {
   static $pb.PbList<CmdScanStart> createRepeated() => $pb.PbList<CmdScanStart>();
   @$core.pragma('dart2js:noInline')
   static CmdScanStart getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CmdScanStart>(create);
-  static CmdScanStart _defaultInstance;
+  static CmdScanStart? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.bool get blocking => $_getBF(0);
@@ -86,7 +86,7 @@ class RespScanStart extends $pb.GeneratedMessage {
   factory RespScanStart.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory RespScanStart.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   RespScanStart clone() => RespScanStart()..mergeFromMessage(this);
-  RespScanStart copyWith(void Function(RespScanStart) updates) => super.copyWith((message) => updates(message as RespScanStart));
+  RespScanStart copyWith(void Function(RespScanStart) updates) => super.copyWith((message) => updates(message as RespScanStart)) as RespScanStart;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static RespScanStart create() => RespScanStart._();
@@ -94,7 +94,7 @@ class RespScanStart extends $pb.GeneratedMessage {
   static $pb.PbList<RespScanStart> createRepeated() => $pb.PbList<RespScanStart>();
   @$core.pragma('dart2js:noInline')
   static RespScanStart getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RespScanStart>(create);
-  static RespScanStart _defaultInstance;
+  static RespScanStart? _defaultInstance;
 }
 
 class CmdScanStatus extends $pb.GeneratedMessage {
@@ -107,7 +107,7 @@ class CmdScanStatus extends $pb.GeneratedMessage {
   factory CmdScanStatus.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory CmdScanStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   CmdScanStatus clone() => CmdScanStatus()..mergeFromMessage(this);
-  CmdScanStatus copyWith(void Function(CmdScanStatus) updates) => super.copyWith((message) => updates(message as CmdScanStatus));
+  CmdScanStatus copyWith(void Function(CmdScanStatus) updates) => super.copyWith((message) => updates(message as CmdScanStatus)) as CmdScanStatus;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static CmdScanStatus create() => CmdScanStatus._();
@@ -115,7 +115,7 @@ class CmdScanStatus extends $pb.GeneratedMessage {
   static $pb.PbList<CmdScanStatus> createRepeated() => $pb.PbList<CmdScanStatus>();
   @$core.pragma('dart2js:noInline')
   static CmdScanStatus getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CmdScanStatus>(create);
-  static CmdScanStatus _defaultInstance;
+  static CmdScanStatus? _defaultInstance;
 }
 
 class RespScanStatus extends $pb.GeneratedMessage {
@@ -130,7 +130,7 @@ class RespScanStatus extends $pb.GeneratedMessage {
   factory RespScanStatus.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory RespScanStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   RespScanStatus clone() => RespScanStatus()..mergeFromMessage(this);
-  RespScanStatus copyWith(void Function(RespScanStatus) updates) => super.copyWith((message) => updates(message as RespScanStatus));
+  RespScanStatus copyWith(void Function(RespScanStatus) updates) => super.copyWith((message) => updates(message as RespScanStatus)) as RespScanStatus;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static RespScanStatus create() => RespScanStatus._();
@@ -138,7 +138,7 @@ class RespScanStatus extends $pb.GeneratedMessage {
   static $pb.PbList<RespScanStatus> createRepeated() => $pb.PbList<RespScanStatus>();
   @$core.pragma('dart2js:noInline')
   static RespScanStatus getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RespScanStatus>(create);
-  static RespScanStatus _defaultInstance;
+  static RespScanStatus? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.bool get scanFinished => $_getBF(0);
@@ -171,7 +171,7 @@ class CmdScanResult extends $pb.GeneratedMessage {
   factory CmdScanResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory CmdScanResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   CmdScanResult clone() => CmdScanResult()..mergeFromMessage(this);
-  CmdScanResult copyWith(void Function(CmdScanResult) updates) => super.copyWith((message) => updates(message as CmdScanResult));
+  CmdScanResult copyWith(void Function(CmdScanResult) updates) => super.copyWith((message) => updates(message as CmdScanResult)) as CmdScanResult;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static CmdScanResult create() => CmdScanResult._();
@@ -179,7 +179,7 @@ class CmdScanResult extends $pb.GeneratedMessage {
   static $pb.PbList<CmdScanResult> createRepeated() => $pb.PbList<CmdScanResult>();
   @$core.pragma('dart2js:noInline')
   static CmdScanResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CmdScanResult>(create);
-  static CmdScanResult _defaultInstance;
+  static CmdScanResult? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.int get startIndex => $_getIZ(0);
@@ -215,7 +215,7 @@ class WiFiScanResult extends $pb.GeneratedMessage {
   factory WiFiScanResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory WiFiScanResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   WiFiScanResult clone() => WiFiScanResult()..mergeFromMessage(this);
-  WiFiScanResult copyWith(void Function(WiFiScanResult) updates) => super.copyWith((message) => updates(message as WiFiScanResult));
+  WiFiScanResult copyWith(void Function(WiFiScanResult) updates) => super.copyWith((message) => updates(message as WiFiScanResult)) as WiFiScanResult;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static WiFiScanResult create() => WiFiScanResult._();
@@ -223,7 +223,7 @@ class WiFiScanResult extends $pb.GeneratedMessage {
   static $pb.PbList<WiFiScanResult> createRepeated() => $pb.PbList<WiFiScanResult>();
   @$core.pragma('dart2js:noInline')
   static WiFiScanResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<WiFiScanResult>(create);
-  static WiFiScanResult _defaultInstance;
+  static WiFiScanResult? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.List<$core.int> get ssid => $_getN(0);
@@ -282,7 +282,7 @@ class RespScanResult extends $pb.GeneratedMessage {
   factory RespScanResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory RespScanResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   RespScanResult clone() => RespScanResult()..mergeFromMessage(this);
-  RespScanResult copyWith(void Function(RespScanResult) updates) => super.copyWith((message) => updates(message as RespScanResult));
+  RespScanResult copyWith(void Function(RespScanResult) updates) => super.copyWith((message) => updates(message as RespScanResult)) as RespScanResult;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static RespScanResult create() => RespScanResult._();
@@ -290,7 +290,7 @@ class RespScanResult extends $pb.GeneratedMessage {
   static $pb.PbList<RespScanResult> createRepeated() => $pb.PbList<RespScanResult>();
   @$core.pragma('dart2js:noInline')
   static RespScanResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RespScanResult>(create);
-  static RespScanResult _defaultInstance;
+  static RespScanResult? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.List<WiFiScanResult> get entries => $_getList(0);
@@ -334,7 +334,7 @@ class WiFiScanPayload extends $pb.GeneratedMessage {
   factory WiFiScanPayload.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory WiFiScanPayload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   WiFiScanPayload clone() => WiFiScanPayload()..mergeFromMessage(this);
-  WiFiScanPayload copyWith(void Function(WiFiScanPayload) updates) => super.copyWith((message) => updates(message as WiFiScanPayload));
+  WiFiScanPayload copyWith(void Function(WiFiScanPayload) updates) => super.copyWith((message) => updates(message as WiFiScanPayload)) as WiFiScanPayload;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static WiFiScanPayload create() => WiFiScanPayload._();
@@ -342,9 +342,9 @@ class WiFiScanPayload extends $pb.GeneratedMessage {
   static $pb.PbList<WiFiScanPayload> createRepeated() => $pb.PbList<WiFiScanPayload>();
   @$core.pragma('dart2js:noInline')
   static WiFiScanPayload getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<WiFiScanPayload>(create);
-  static WiFiScanPayload _defaultInstance;
+  static WiFiScanPayload? _defaultInstance;
 
-  WiFiScanPayload_Payload whichPayload() => _WiFiScanPayload_PayloadByTag[$_whichOneof(0)];
+  WiFiScanPayload_Payload? whichPayload() => _WiFiScanPayload_PayloadByTag[$_whichOneof(0)];
   void clearPayload() => clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)

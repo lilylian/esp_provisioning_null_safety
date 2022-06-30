@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: wifi_config.proto
 //
-// @dart = 2.3
+// @ dart = 2.3
 // ignore_for_file: camel_case_types,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type
 
 import 'dart:core' as $core;
@@ -27,7 +27,7 @@ class CmdGetStatus extends $pb.GeneratedMessage {
   factory CmdGetStatus.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory CmdGetStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   CmdGetStatus clone() => CmdGetStatus()..mergeFromMessage(this);
-  CmdGetStatus copyWith(void Function(CmdGetStatus) updates) => super.copyWith((message) => updates(message as CmdGetStatus));
+  CmdGetStatus copyWith(void Function(CmdGetStatus) updates) => super.copyWith((message) => updates(message as CmdGetStatus)) as CmdGetStatus;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static CmdGetStatus create() => CmdGetStatus._();
@@ -35,7 +35,7 @@ class CmdGetStatus extends $pb.GeneratedMessage {
   static $pb.PbList<CmdGetStatus> createRepeated() => $pb.PbList<CmdGetStatus>();
   @$core.pragma('dart2js:noInline')
   static CmdGetStatus getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CmdGetStatus>(create);
-  static CmdGetStatus _defaultInstance;
+  static CmdGetStatus? _defaultInstance;
 }
 
 enum RespGetStatus_State {
@@ -64,7 +64,7 @@ class RespGetStatus extends $pb.GeneratedMessage {
   factory RespGetStatus.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory RespGetStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   RespGetStatus clone() => RespGetStatus()..mergeFromMessage(this);
-  RespGetStatus copyWith(void Function(RespGetStatus) updates) => super.copyWith((message) => updates(message as RespGetStatus));
+  RespGetStatus copyWith(void Function(RespGetStatus) updates) => super.copyWith((message) => updates(message as RespGetStatus)) as RespGetStatus;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static RespGetStatus create() => RespGetStatus._();
@@ -72,9 +72,9 @@ class RespGetStatus extends $pb.GeneratedMessage {
   static $pb.PbList<RespGetStatus> createRepeated() => $pb.PbList<RespGetStatus>();
   @$core.pragma('dart2js:noInline')
   static RespGetStatus getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RespGetStatus>(create);
-  static RespGetStatus _defaultInstance;
+  static RespGetStatus? _defaultInstance;
 
-  RespGetStatus_State whichState() => _RespGetStatus_StateByTag[$_whichOneof(0)];
+  RespGetStatus_State? whichState() => _RespGetStatus_StateByTag[$_whichOneof(0)];
   void clearState() => clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)
@@ -130,7 +130,7 @@ class CmdSetConfig extends $pb.GeneratedMessage {
   factory CmdSetConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory CmdSetConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   CmdSetConfig clone() => CmdSetConfig()..mergeFromMessage(this);
-  CmdSetConfig copyWith(void Function(CmdSetConfig) updates) => super.copyWith((message) => updates(message as CmdSetConfig));
+  CmdSetConfig copyWith(void Function(CmdSetConfig) updates) => super.copyWith((message) => updates(message as CmdSetConfig)) as CmdSetConfig;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static CmdSetConfig create() => CmdSetConfig._();
@@ -138,7 +138,7 @@ class CmdSetConfig extends $pb.GeneratedMessage {
   static $pb.PbList<CmdSetConfig> createRepeated() => $pb.PbList<CmdSetConfig>();
   @$core.pragma('dart2js:noInline')
   static CmdSetConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CmdSetConfig>(create);
-  static CmdSetConfig _defaultInstance;
+  static CmdSetConfig? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.List<$core.int> get ssid => $_getN(0);
@@ -188,7 +188,7 @@ class RespSetConfig extends $pb.GeneratedMessage {
   factory RespSetConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory RespSetConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   RespSetConfig clone() => RespSetConfig()..mergeFromMessage(this);
-  RespSetConfig copyWith(void Function(RespSetConfig) updates) => super.copyWith((message) => updates(message as RespSetConfig));
+  RespSetConfig copyWith(void Function(RespSetConfig) updates) => super.copyWith((message) => updates(message as RespSetConfig)) as RespSetConfig;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static RespSetConfig create() => RespSetConfig._();
@@ -196,7 +196,7 @@ class RespSetConfig extends $pb.GeneratedMessage {
   static $pb.PbList<RespSetConfig> createRepeated() => $pb.PbList<RespSetConfig>();
   @$core.pragma('dart2js:noInline')
   static RespSetConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RespSetConfig>(create);
-  static RespSetConfig _defaultInstance;
+  static RespSetConfig? _defaultInstance;
 
   @$pb.TagNumber(1)
   $0.Status get status => $_getN(0);
@@ -218,7 +218,7 @@ class CmdApplyConfig extends $pb.GeneratedMessage {
   factory CmdApplyConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory CmdApplyConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   CmdApplyConfig clone() => CmdApplyConfig()..mergeFromMessage(this);
-  CmdApplyConfig copyWith(void Function(CmdApplyConfig) updates) => super.copyWith((message) => updates(message as CmdApplyConfig));
+  CmdApplyConfig copyWith(void Function(CmdApplyConfig) updates) => super.copyWith((message) => updates(message as CmdApplyConfig)) as CmdApplyConfig;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static CmdApplyConfig create() => CmdApplyConfig._();
@@ -226,7 +226,7 @@ class CmdApplyConfig extends $pb.GeneratedMessage {
   static $pb.PbList<CmdApplyConfig> createRepeated() => $pb.PbList<CmdApplyConfig>();
   @$core.pragma('dart2js:noInline')
   static CmdApplyConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CmdApplyConfig>(create);
-  static CmdApplyConfig _defaultInstance;
+  static CmdApplyConfig? _defaultInstance;
 }
 
 class RespApplyConfig extends $pb.GeneratedMessage {
@@ -240,7 +240,7 @@ class RespApplyConfig extends $pb.GeneratedMessage {
   factory RespApplyConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory RespApplyConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   RespApplyConfig clone() => RespApplyConfig()..mergeFromMessage(this);
-  RespApplyConfig copyWith(void Function(RespApplyConfig) updates) => super.copyWith((message) => updates(message as RespApplyConfig));
+  RespApplyConfig copyWith(void Function(RespApplyConfig) updates) => super.copyWith((message) => updates(message as RespApplyConfig)) as RespApplyConfig;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static RespApplyConfig create() => RespApplyConfig._();
@@ -248,7 +248,7 @@ class RespApplyConfig extends $pb.GeneratedMessage {
   static $pb.PbList<RespApplyConfig> createRepeated() => $pb.PbList<RespApplyConfig>();
   @$core.pragma('dart2js:noInline')
   static RespApplyConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RespApplyConfig>(create);
-  static RespApplyConfig _defaultInstance;
+  static RespApplyConfig? _defaultInstance;
 
   @$pb.TagNumber(1)
   $0.Status get status => $_getN(0);
@@ -297,7 +297,7 @@ class WiFiConfigPayload extends $pb.GeneratedMessage {
   factory WiFiConfigPayload.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory WiFiConfigPayload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   WiFiConfigPayload clone() => WiFiConfigPayload()..mergeFromMessage(this);
-  WiFiConfigPayload copyWith(void Function(WiFiConfigPayload) updates) => super.copyWith((message) => updates(message as WiFiConfigPayload));
+  WiFiConfigPayload copyWith(void Function(WiFiConfigPayload) updates) => super.copyWith((message) => updates(message as WiFiConfigPayload)) as WiFiConfigPayload;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static WiFiConfigPayload create() => WiFiConfigPayload._();
@@ -305,9 +305,9 @@ class WiFiConfigPayload extends $pb.GeneratedMessage {
   static $pb.PbList<WiFiConfigPayload> createRepeated() => $pb.PbList<WiFiConfigPayload>();
   @$core.pragma('dart2js:noInline')
   static WiFiConfigPayload getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<WiFiConfigPayload>(create);
-  static WiFiConfigPayload _defaultInstance;
+  static WiFiConfigPayload? _defaultInstance;
 
-  WiFiConfigPayload_Payload whichPayload() => _WiFiConfigPayload_PayloadByTag[$_whichOneof(0)];
+  WiFiConfigPayload_Payload? whichPayload() => _WiFiConfigPayload_PayloadByTag[$_whichOneof(0)];
   void clearPayload() => clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)
