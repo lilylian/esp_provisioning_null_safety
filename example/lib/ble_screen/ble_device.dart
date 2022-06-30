@@ -9,8 +9,8 @@ class BleDevice {
   String get id => peripheral.identifier;
 
   BleDevice(ScanResult scanResult)
-      : peripheral = scanResult.peripheral,
-        name = scanResult.peripheral.name ?? scanResult.advertisementData.localName ?? "Unknown",
+      : peripheral = scanResult.bluetoothDevice,
+        name = scanResult.bluetoothDevice.name ?? scanResult.advertisementData.localName ?? "Unknown",
         rssi = scanResult.rssi;
 
   @override

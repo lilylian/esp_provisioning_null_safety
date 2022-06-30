@@ -14,8 +14,7 @@ dependencies:
   protobuf: ^2.0.0
   cryptography: ^2.0.1
   collection: ^1.15.0
-  flutter_ble_lib: ^2.3.2
-
+  flutter_blue: ^0.8.0
 
 dev_dependencies:
   flutter_test:
